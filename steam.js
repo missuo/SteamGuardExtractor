@@ -1,6 +1,6 @@
 /*
 [rewrite_local]
-# > Steam TOTP Extractor
+# > Steam Guard Extractor
 ^https?:\/\/api\.steampowered\.com\/ITwoFactorService\/AddAuthenticator url script-response-body https://raw.githubusercontent.com/missuo/SteamGuardExtractor/refs/heads/main/steam.js
 [mitm] 
 hostname = api.steampowered.com

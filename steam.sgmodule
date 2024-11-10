@@ -1,0 +1,8 @@
+#!name=Steam Guard Exporter
+#!desc=Extract the secret of Steam Guard 
+
+[Script]
+steam.js = requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/missuo/SteamGuardExtractor/refs/heads/main/steam.js,type=http-response,pattern=^https?:\/\/api\.steampowered\.com\/ITwoFactorService\/AddAuthenticator,script-update-interval=0
+
+[MITM]
+hostname = api.steampowered.com:0
